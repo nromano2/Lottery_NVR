@@ -2,7 +2,7 @@
 public class Application {
 	
 	public static void main(String[] args){
-		// TODO Auto-generated method stub
+		
 		MegaMillions MM_Lottery = new MegaMillions();
 		Powerball PB_Lottery = new Powerball();
 		Pick3 P3_Lottery = new Pick3();

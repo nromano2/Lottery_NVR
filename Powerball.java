@@ -130,7 +130,7 @@ public class Powerball extends JackpotLottery{
 		{
 			while(true)
 			{
-				System.out.print("Enter non-powerball number " + (i + 1) + " (0-69): ");
+				System.out.print("Enter non-powerball number " + (i + 1) + " (1-69): ");
 				numberStr = scan.nextLine();
 				
 				try
@@ -171,7 +171,7 @@ public class Powerball extends JackpotLottery{
 				
 				catch(RangeValueException exception)
 				{
-					System.out.println("Invalid input. It appears that the number you have played is outside the range of playable numbers. Make sure that you are entering numbers between 1 and 70.");
+					System.out.println("Invalid input. It appears that the number you have played is outside the range of playable numbers. Make sure that you are entering numbers between 1 and 69.");
 				}//end catch block
 				
 			}//end while loop
@@ -187,7 +187,7 @@ public class Powerball extends JackpotLottery{
 		 */
 		while(true)
 		{
-			System.out.print("Enter the powerball number (0-26): ");
+			System.out.print("Enter the powerball number (1-26): ");
 			numberStr = scan.nextLine();
 			
 			try
@@ -214,7 +214,7 @@ public class Powerball extends JackpotLottery{
 			
 			catch(RangeValueException exception)
 			{
-				System.out.println("Invalid input. It appears that the number you have played is outside the range of playable numbers. Make sure that you are entering numbers between 1 and 70.");
+				System.out.println("Invalid input. It appears that the number you have played is outside the range of playable numbers. Make sure that you are entering numbers between 1 and 26.");
 			}//end catch block
 			
 		}//end while loop

@@ -215,7 +215,7 @@ public class MegaMillions extends JackpotLottery{
 			
 			catch(RangeValueException exception)
 			{
-				System.out.println("Invalid input. It appears that the number you have played is outside the range of playable numbers. Make sure that you are entering numbers between 1 and 70.");
+				System.out.println("Invalid input. It appears that the number you have played is outside the range of playable numbers. Make sure that you are entering numbers between 1 and 25.");
 			}//end catch block
 			
 		}//end while loop
