@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  * @author nicholasromano
- * @version 1.0
+ * @version 1.01
  * Final Project
  * CS131 Spring 2023
  */
@@ -587,7 +587,7 @@ public class Pick3 extends SelectionLottery{
 	 * 
 	 * @return A string representing a ticket.
 	 */
-	private String generateTicket(int[] userNum, int[] winningNum)
+	public String generateTicket(int[] userNum, int[] winningNum)
 	{
 		StringBuilder ticket = new StringBuilder("\n============================================= \n");
 		ticket.append("Pick 3 Ticket \n");
@@ -688,7 +688,7 @@ public class Pick3 extends SelectionLottery{
 			int wagerAmount; //used to store the wager amount from the user prompt
 			int selectionMethod; //used to store the selection method chosen by the user encoded as a 0 or 1.
 			int totalPayout = 0; //used to store the payout of all Pick3 Lottery tickets. Variable initialized to 0.
-			int totalWagers = 0; //used to store the wagers of all pcik 3 Lottery tickets. Variable initialized to 0.
+			int totalWagers = 0; //used to store the wagers of all Pick 3 Lottery tickets. Variable initialized to 0.
 			String input; //used to store user responses from the prompts
 			String ticket; //used to store the ticket generated from the generateTicketMethod
 			String[] ticketsBought = new String[numPlays]; //Array used to store Pick 4 lottery tickets

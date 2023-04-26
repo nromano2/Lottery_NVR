@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * @author nicholasromano
- * @version 1.0
+ * @version 1.02
  * Final Project
  * CS131 Spring 2023
  */
@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Powerball extends JackpotLottery{
 	private int[] userNumbers; //int array used to store the user played numbers
 	private int[] winningNumbers; //int array used to store the randomly generated winning drawn numbers
-	private long payout; //long variable is used to store the payout for each Megamillions ticket.
+	private long payout; //long variable is used to store the payout for each Powerball ticket.
 	
 	Scanner scan = new Scanner(System.in);
 	Random generator = new Random();
@@ -166,7 +166,7 @@ public class Powerball extends JackpotLottery{
 				
 				catch(DuplicateValueException exception)
 				{
-					System.out.println("Invalid input. It appears that this number has already been played for this ticket. Please enter a new unique non-Megaball number.");
+					System.out.println("Invalid input. It appears that this number has already been played for this ticket. Please enter a new unique non-Powerball number.");
 				}//end catch block
 				
 				catch(RangeValueException exception)
@@ -530,11 +530,11 @@ public class Powerball extends JackpotLottery{
 	}//end numPlays
 	
 	/**
-	 * The play method prompts the user through playing a given number of Mega Millions Lootert tickets.
+	 * The play method prompts the user through playing a given number of Powerball Lottery tickets.
 	 * 
 	 * @param numPlays - the number of tickets that the user is wanting to play.
-	 * @throws DuplicateValueException - exception if one of the 5 non-Megaball numbers have already been played in current set of 5 non-Megamilions numbers.
-	 * @throws RangeValueException - exception if the user enters a non-Megaball number or Megaball number lies outside their respective ranges of playable numbers.
+	 * @throws DuplicateValueException - exception if one of the 5 non-Powerball numbers have already been played in current set of 5 non-Powerball numbers.
+	 * @throws RangeValueException - exception if the user enters a non-Powerball number or Powerball number lies outside their respective ranges of playable numbers.
 	 */
 	public void play(int numPlays)
 	{

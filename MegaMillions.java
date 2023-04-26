@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * @author nicholasromano
- * @version 1.0
+ * @version 1.02
  * Final Project
  * CS131 Spring 2023
  */
@@ -46,7 +46,7 @@ public class MegaMillions extends JackpotLottery{
 		rules.append("\t * For an additional " + currency.format(1) + " for each ticket, there is an additional multiplier option that can be purchased which can multiply the winnings of the payout.\n\n");
 		
 		rules.append("Number Selection: \n");
-		rules.append("\t * For a powerball lottery ticket, 5 non-Megaball numbers are selected and a single Megaball bonus number. \n");
+		rules.append("\t * For a MegaMillions lottery ticket, 5 non-Megaball numbers are selected and a single Megaball bonus number. \n");
 		rules.append("\t * For the 5 non-Megaball numbers, the range of valid numbers to play are the numbers 1-70. \n");
 		rules.append("\t * For the single Megaball number, the range of valid numbers to play are the numbers 1-25. \n");
 		rules.append("\t * Note: For each MegaMillions play, 5 different non-Megaball numbers must be played. \n\n");
@@ -303,7 +303,7 @@ public class MegaMillions extends JackpotLottery{
 	 * 
 	 * @param userNumArray - array containing the user numbers 
 	 * @param winningNumArray - array containing the winning numbers 
-	 * @return numMatches - local variable that stores the number of matching non-Powerball numbers 
+	 * @return numMatches - local variable that stores the number of matching non-Megaball numbers 
 	 */
 	public int matchingNumbers(int[] userNumArray, int[] winningNumArray)
 	{
